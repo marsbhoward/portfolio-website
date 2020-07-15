@@ -1,0 +1,565 @@
+
+
+html,body {
+  height: 100%;
+  margin: 0;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#root{
+	height: 100%;
+	margin-top: -5%;
+}
+
+.background{
+	margin-top: 10%;
+	position: fixed;
+	height: 100%; 
+	width: 100%;
+	opacity: .40;
+	display: flex;
+	
+	align-items: flex-start;
+	justify-content: flex-start;
+	
+	background: rgb(220, 220, 220);
+	z-index: -3;
+
+}
+
+
+.background-2{
+	margin-top: 10%;
+	position: fixed;
+	height: 100%; 
+	width: 100%;
+	opacity: .40;
+	display: flex;
+	
+	align-items: flex-start;
+	justify-content: flex-start;
+	
+	background: white;
+	z-index: -3;
+
+}
+
+.background2{
+	margin-top: 5%;
+	position: fixed;
+	height: 18.38%; 
+	width: 100%;
+	background: white;	
+
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;	
+
+	color: rgb(105, 105, 105);
+	font-size: 600%;
+	font-weight: bold;
+	z-index: 3;
+
+}
+
+.background2-2{
+	margin-top: 5%;
+	position: fixed;
+	height: 18.38%; 
+	width: 100%;
+	background: black;	
+
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;	
+
+	color: white;
+	font-size: 600%;
+	font-weight: bold;
+	z-index: 3;
+
+}
+
+.name{
+	position: relative;
+	margin-top: 3.5%;
+	z-index: -1;
+
+}
+
+.fade{
+	opacity: .80;
+}
+
+.navbar{
+	position: absolute;
+	margin-left: 75%;
+	margin-top: 11%;
+
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	justify-content: flex-end;	
+
+
+	width: 25%;
+	background: transparent;
+	z-index: 4;
+}
+
+.inNavbar{
+	width: 11%;
+	margin-right: 2%;
+}
+
+
+.homepage{
+	height: 100%;
+	z-index: -1;
+}
+
+.header{
+	margin-top: 5%;
+	margin-bottom: 0;
+	font-size: 200%;
+	font-weight: normal;
+	color: transparent; 
+}
+
+.title{
+	margin: 0;
+	font-size: 150%;
+	color: transparent; 
+}
+
+.featured{
+	height: 30%;
+	width: 100%;
+	flex: 100%;
+	justify-content: center;
+	min-width: 982px;
+}
+
+
+.about{
+	margin: 5%;
+	height: 100%;
+}
+
+.flex{
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.AFlex{
+	width: 100%;
+	height: 30%;
+	display: flex;
+	align-items: center;
+}
+
+.inFlex{
+	margin: 10%;
+	align-items: center;
+	flex: 40%;
+	height: 100%;
+}
+
+.grid{
+	display: grid;
+	grid-template-columns: 100%; 
+}
+
+.grid2{
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+.onlight{
+	background: white;
+	opacity: .80;
+	z-index: 1;
+	position: relative;
+	margin-top: 19.2%;
+	margin-left:.5%; 
+	margin-right:.5%;
+	height: 250px;
+	width: 11%;
+	border: solid;
+	border-width: .1px;
+	border-color: transparent;
+	display: inline-block; 
+	padding: 0;	
+	word-wrap: break-word;
+	vertical-align:top;
+
+		box-shadow: 5px 5px transparent,
+	    4px 4px transparent, 
+	    3px 3px transparent, 
+	    2px 2px transparent, 
+	    1px 1px transparent,
+	    5px 5px 5px gray;
+}
+
+.border{
+	width: 50%;
+	height: 50%;
+	margin-left: 25%;
+	align-items: center;
+	position: absolute;
+	margin-top: 15%;
+	border-style: solid;
+	border-width: .5px;
+}
+
+.river{
+	background-image: url('images/river.jpg');
+}
+
+.doubleDog{
+	background-image: url('images/doubleDog.png');	
+}
+
+.matchmaking{
+	background-image: url('images/matchmaking.png');		
+}
+
+
+.highlight{
+	text-align: center;
+	vertical-align:top;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	margin-top: 20%;
+	margin-left:.5%; 
+	margin-right:.5%;
+	color: transparent;
+	height: 250px;
+	width: 11%;
+	border: solid;
+	border-width: .1px;
+	border-color: transparent;
+	display: inline-block; 
+	padding: 0;
+
+	box-shadow: 5px 5px transparent,
+	    4px 4px transparent, 
+	    3px 3px transparent, 
+	    2px 2px transparent, 
+	    1px 1px transparent,
+	    5px 5px 5px rbg(211, 211, 211);	
+}
+
+
+.spotlight{
+	position: relative;
+	height: 185px;
+	margin-top: 15%;
+	color: black;
+	margin-left: 15%;
+	background: white;
+	width: 33%;
+}
+
+.spotlightText{
+	padding: 3%;
+}
+
+.moreInfo{
+	position: relative;
+	z-index: 0;
+	margin-top: 2%;
+	background: white;
+	height: 165px;
+	width: 566px;
+	border: solid;
+	border-width: .5px;
+	display: inline-block;
+
+		box-shadow: 5px 5px transparent,
+	    4px 4px transparent, 
+	    3px 3px transparent, 
+	    2px 2px transparent, 
+	    1px 1px transparent,
+	    5px 5px 5px gray;	
+}
+
+.links{
+	margin-top: 3%;
+}
+
+.closer{
+	float: left;
+	margin-left:1%;
+	margin-top: 1%; 
+	border: none;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.remove a{
+  text-decoration: none;
+}
+
+.hide{
+	display: none;
+}
+
+.underline{
+  text-decoration: underline;
+}
+
+.myPic{
+	width: 10%;
+	box-shadow: 5px 5px transparent,
+                4px 4px transparent, 
+                3px 3px transparent, 
+                2px 2px transparent, 
+                1px 1px transparent,
+                5px 5px 5px grey;
+    
+}
+
+.head{
+	position: relative;
+	font-size: 350%;
+	font-size: bold;
+}
+
+.intro{
+	position: relative;
+	font-size: 200%;
+	color: indianred;
+}
+
+.bio{
+	font-size: 120%;
+}
+
+.description{
+	position: relative;
+}
+
+.hover{
+	margin-right: 5%;
+}
+
+.ui.pointing.label{
+	position: fixed !important;
+	margin-top: 2.5% !important;  
+	margin-left: -11.15% !important;
+}
+
+.ui.pointing.label.clicked{
+	margin-left: -12.40% !important;
+	color: purple !important;
+}
+
+ui.image {
+	position: fixed !important; 
+	vertical-align: top !important; 
+	 display: inline-block !important; 
+}
+
+.footer{
+  position: fixed;
+  left:0;
+  right:0;
+  bottom: 0;
+  height: 7%;
+
+  font-size: 120%;
+  color: lightgray;
+  font-weight: bold;
+  text-align: center;
+  
+  display: inline-grid;
+  grid-template-columns: 50% 50%;
+  
+  background: black;
+  
+  border-color: gray;
+
+  z-index:1 
+}
+
+/***************** mobile screen homepage *****************/
+@media screen and (max-width: 957px){
+
+  .border{
+  	width: 80%;
+  	margin-left: 10%;
+  	margin-right: 10%;
+  }
+
+  .featured{
+  	margin-top: 10%;
+	height: 30%;
+	width: 100%;
+	text-align: center;
+	align-self: center;
+  }
+
+  .projects{
+  	margin-left: -3.5%;
+  	display: flex;
+  	width: 80%;
+	justify-content: center;
+  }
+
+  .highlight{
+  	width: 15%;
+  	margin-top: 23%;
+  }
+
+  .onlight{
+	width: 15%;	
+	margin-top: 22.5%;
+  }
+
+  .AFlex{
+	margin-top: 10%;
+  }
+
+  .navbar{
+	position: fixed;
+	margin-left: 91.4%;
+	margin-top: 11%;
+	width: 100%;
+
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	justify-content: flex-end;	
+
+	z-index: 4;
+	width: 4.9%;
+	background: white;
+  }
+
+  .menu{
+  	margin-left: 3.65%;
+  	 margin-top: 38%;
+  	 width: 100%;
+  	 position: fixed;
+  	 display: inline-block;
+  }
+
+  .inMenu{
+  	width: 100%;
+  	color: white;
+  	background: black;
+  	border-style: solid;
+  	border-width: .1px;
+  	width: 100%;
+  	padding: 1%;
+  }       
+}
+
+@media screen and (max-width: 700px){
+  .menu{
+  	margin-left: 1%;
+  	margin-top: 117%;
+  }
+  .inMenu{
+  	padding: 6%;
+  }  
+
+  .featured{
+	height: 30%;
+	width: 100%;
+  }
+
+  .projects{
+  	margin-top: 6%;
+  	margin-left: .2%;
+  	position: fixed;
+	height: 30%;
+	width: 100%;
+	justify-content: center;
+  }
+
+  .AFlex{
+	margin-top: 15%;
+  }
+
+  .inFlex.myPic{
+	width: 45%;
+	margin-top: -25%;
+  }
+
+  .inFlex{
+	margin: 5%;
+	margin-top: 10%;
+	margin-bottom: 10%;
+	align-items: center;
+	flex: 40%;
+	height: 100%;
+}
+
+  .highlight{
+  	width: 25%;
+  }
+
+  .onlight{
+	width: 25%;	
+  }
+
+  .head{
+	position: relative;
+	z-index: 1;
+	font-size: 350%;
+	font-size: bold;
+  }
+
+  .navbar{
+	margin-top: 9%;
+	margin-left: 90.4%;
+	width: 8.6%;
+  } 
+
+  .moreInfo{
+	position: relative;
+	z-index: 0;
+	margin-top: 105%;
+	background: white;
+	height: 145px;
+	width: 100%;
+	border: solid;
+	border-width: .5px;
+	display: inline-block;
+
+		box-shadow: 5px 5px transparent,
+	    4px 4px transparent, 
+	    3px 3px transparent, 
+	    2px 2px transparent, 
+	    1px 1px transparent,
+	    5px 5px 5px gray;	
+  }
+
+  .background2{
+  	margin-left: -1.6%;
+  	width: 105%;
+  }
+
+  .background2-2{
+  	margin-left: -1.6%;
+  	width: 105%;
+  }   
+}
