@@ -119,6 +119,7 @@ code {
 
 .inNavbar{
 	width: 11%;
+	min-width: 39.59px;
 	margin-right: 2%;
 }
 
@@ -218,10 +219,66 @@ code {
 	height: 50%;
 	margin-left: 25%;
 	align-items: center;
-	position: absolute;
+	position: fixed;
 	margin-top: 15%;
 	border-style: solid;
 	border-width: .5px;
+}
+
+.landingPage{
+	background: #b38665;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+}
+
+.greeting{
+	color:white;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+}
+
+.greetingText{
+	font-size: 7.4vw;
+}
+
+.landingImage{
+	position: static;
+	background-repeat: no-repeat;
+	background-image: url('images/marsPlanet.jpg');
+	background-size: contain;
+
+	margin: auto;
+	margin-top: 9.68%;
+	
+	
+
+	color: white;
+	background-position: center;
+	
+
+	
+
+	height: 60%;
+	width: 60%;
+}
+
+.continue{
+	background-image: url('images/downArrow.png');
+	position: static;
+  	right: 50%;
+  	left: 50%;
+
+	margin-top: 5%;
+	margin-left: 47.59%;
+
+  	width: 5em;
+  	height: 5em;
+  	z-index: 3;
+  	background-size: cover;
 }
 
 .river{
@@ -469,7 +526,17 @@ ui.image {
   	border-width: .1px;
   	width: 100%;
   	padding: 1%;
-  }       
+  }
+
+  .landingImage{
+	height: 80%;
+	width: 80%;
+  }
+
+  .continue{
+	margin-top: -5%;
+	margin-left: 46%;
+  }
 }
 
 @media screen and (max-width: 700px){
@@ -484,6 +551,10 @@ ui.image {
   .featured{
 	height: 30%;
 	width: 100%;
+  }
+
+  .greetingText{
+	font-size: 17vw;
   }
 
   .projects{
@@ -537,7 +608,7 @@ ui.image {
   .moreInfo{
 	position: relative;
 	z-index: 0;
-	margin-top: 105%;
+	margin-top: 81%;
 	background: white;
 	height: 145px;
 	width: 100%;
@@ -561,5 +632,11 @@ ui.image {
   .background2-2{
   	margin-left: -1.6%;
   	width: 105%;
-  }   
+  }
+
+.continue{
+	margin-top: -5%;
+	margin-left: 43%;
+}
+
 }

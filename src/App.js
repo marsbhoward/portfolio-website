@@ -6,6 +6,7 @@ import {
 
 import Homepage from './containers/homepage';
 import About from './containers/about';
+import Landing from './containers/landing';
 import Background from './components/background';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
@@ -44,8 +45,10 @@ class App extends Component {
   render(){
     return(
       <Router>
-        <Route path="/" render={() => <div className="homeBase"><Background currentPage={this.state.currentPage}/> <Footer/></div>} />
-        <Route exact path="/" render={() =><div className="home"> <Navbar currentPage={this.state.currentPage}/> <Homepage pageSwitch={this.pageSwitch}/> </div> }/>
+        <Route exact path="/" render={() => <Landing/>} />  
+        <Route path="/featured" render={() => <div className="homeBase"><Background currentPage={this.state.currentPage}/> <Footer/></div>} />            
+        <Route exact path="/featured" render={() =><div className="home"> <Navbar currentPage={this.state.currentPage}/> <Homepage pageSwitch={this.pageSwitch}/> </div> }/>
+        <Route path="/about" render={() => <div className="homeBase"><Background currentPage={this.state.currentPage}/> <Footer/></div>} />
         <Route exact path="/about" render={() =><div className="home"> <Navbar currentPage={this.state.currentPage}/> <About pageSwitch={this.pageSwitch}/> </div> } />
       </Router>
     );

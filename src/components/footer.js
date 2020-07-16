@@ -5,7 +5,7 @@ const Footer = withRouter(({ history }) => {
 
 return (
   	<div className="footer">
-  		<span className="profileButton" onClick={() => { history.push('/') }}>featured</span>
+  		<span className="profileButton" onClick={() => { history.push('/featured') }}>featured</span>
   		<span className="streamsButton" onClick={() => { history.push('/about') }}>about</span>
 	</div>		
 );
