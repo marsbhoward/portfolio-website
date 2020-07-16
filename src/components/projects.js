@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Card from './card';
 
 class Projects extends Component {
   constructor(props){
@@ -6,7 +7,7 @@ class Projects extends Component {
     this.state = {highlight: "highlight " +this.props.project.class}
   }
 
-  onClick = () => {
+  handleClick = () => {
   	this.props.toggleDisplay();
   	this.setInfo();
   }
@@ -38,7 +39,10 @@ class Projects extends Component {
 	    this.props.description("hover over the featured projects to learn more about them. click on the project to get more indeph information.")		
 	} 
 
-
+//<div className= {this.state.highlight} onClick={this.onClick} onMouseEnter={this.mouseEnter} onMouseLeave={this.mouseExit}> 
+//    <h4 className= {className}> {this.props.project.name}</h4>
+//    {description}
+//</div>
 
   render() {
   	let description
@@ -52,10 +56,7 @@ class Projects extends Component {
   		className = "underline"
   	}
 	return(
-	  <div className= {this.state.highlight} onClick={this.onClick} onMouseEnter={this.mouseEnter} onMouseLeave={this.mouseExit}> 
-		<h4 className= {className}> {this.props.project.name}</h4>
-		{description}
-	  </div>
+	  <Card name={this.props.project.name} classN={this.state.highlight} underline= {className} mouseEnter={this.mouseEnter} mouseExit={this.mouseExit} description={this.props.project.description} handleClick={this.handleClick}/>
 	)
   }
 }

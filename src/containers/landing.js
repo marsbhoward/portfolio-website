@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import {Spring} from 'react-spring/renderprops'
 import { withRouter } from 'react-router-dom'
 import { useSpring, animated } from 'react-spring'
 
