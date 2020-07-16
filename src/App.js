@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { useRef } from 'react'
 import {
   BrowserRouter as Router,
   Route
@@ -11,6 +12,9 @@ import Background from './components/background';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
 import 'semantic-ui-css/semantic.min.css'
+import clamp from 'lodash-es/clamp'
+import { useSprings, animated } from 'react-spring'
+import { useGesture } from 'react-use-gesture'
 
 class App extends Component { 
 
