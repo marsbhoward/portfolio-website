@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {
   BrowserRouter as Router,
-  Route, Redirect,useHistory
+  Route
 } from 'react-router-dom';
 
 import Homepage from './containers/homepage';

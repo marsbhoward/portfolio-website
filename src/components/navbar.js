@@ -129,7 +129,7 @@ class Navbar extends Component {
   		navbar=	 <div className ="navbar">
 				 	<Reveal animated='small fade' className="inNavbar">
 			    		<Reveal.Content visible>
-				      		<Image onMouseEnter={this.hoverEnter} onMouseLeave={this.hoverExit} onClick={() => this.handleOnClick('email'), this.hoverClick} circular size='mini' src= {black} className="fade" />			      		
+				      		<Image onMouseEnter={this.hoverEnter} onMouseLeave={this.hoverExit} onClick={(() => this.handleOnClick('email'), this.hoverClick)} circular size='mini' src= {black} className="fade" />			      		
 				    	</Reveal.Content> 		    	
 				    	<Reveal.Content hidden>
 				      		<Image  circular size='mini' src= {email} />

@@ -11,11 +11,11 @@ const Card = ({name,classN,mouseEnter,mouseExit,description,handleClick, underli
   if (classN === "onlight"){
     	return(
     	  <animated.div
-        	class= {classN}
+        	className= {classN}
         	onMouseEnter={mouseEnter}
         	onClick= {handleClick}
         	onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
-        	onMouseLeave={() => set({ xys: [0, 0, 1] }),mouseExit}
+        	onMouseLeave={(() => set({ xys: [0, 0, 1] }),mouseExit)}
         	style={{ transform: props.xys.interpolate(trans) }}
         >
         <h4 className= {underline}>{name}</h4>
@@ -26,10 +26,10 @@ const Card = ({name,classN,mouseEnter,mouseExit,description,handleClick, underli
     	
     	  return (
     	    <animated.div
-    	      class= {classN}
+    	      className= {classN}
     	      onMouseEnter={mouseEnter}
     	      onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
-    	      onMouseLeave={() => set({ xys: [0, 0, 1] }),mouseExit}
+    	      onMouseLeave={(() => set({ xys: [0, 0, 1] }),mouseExit)}
     	      style={{ transform: props.xys.interpolate(trans) }}
     	    />
     	  )}
