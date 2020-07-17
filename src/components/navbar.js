@@ -130,7 +130,8 @@ class Navbar extends Component {
 				 	<Reveal animated='small fade' className="inNavbar">
 			    		<Reveal.Content visible>
 				      		<Image onMouseEnter={this.hoverEnter} onMouseLeave={this.hoverExit} onClick={(() => this.handleOnClick('email'), this.hoverClick)} circular size='mini' src= {black} className="fade" />			      		
-				    	</Reveal.Content> 		    	
+				    	</Reveal.Content>
+				    	{hoverState} 		    	
 				    	<Reveal.Content hidden>
 				      		<Image  circular size='mini' src= {email} />
 				    	</Reveal.Content>
@@ -174,8 +175,7 @@ class Navbar extends Component {
 				    	<Reveal.Content visible>
 				      		<Image onClick={() => this.handleOnClick('form')} circular size='mini' src= {black} className="fade" />
 				    	</Reveal.Content>    	
-				  	</Reveal>
-				  	{hoverState}	  	  	  			 	  
+				  	</Reveal>	  	  	  			 	  
 			    </div> 			
   }
 

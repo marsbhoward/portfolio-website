@@ -118,6 +118,7 @@ code {
 }
 
 .inNavbar{
+	position: absolute;
 	width: 11%;
 	min-width: 39.59px;
 	margin-right: 2%;
@@ -420,13 +421,13 @@ code {
 .ui.pointing.label{
 	position: absolute;
 	position: fixed !important;
-	margin-top: 2.5% !important;  
-	margin-left: -160px !important;
+	margin-top: 45px !important;  
+	margin-left: -75px !important;
 }
 
 .ui.pointing.label.clicked{
 	position: absolute;
-	margin-left: -179px !important;
+	margin-left: -59px !important;
 	color: purple !important;
 }
 
