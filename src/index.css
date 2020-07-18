@@ -9,6 +9,17 @@ html,body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  overflow: hidden;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+
 }
 
 code {
@@ -199,6 +210,13 @@ code {
 	margin-right:1%;
 	height: 250px;
 	width: 11%;
+
+	
+	background-position: center center;
+	transition: box-shadow 0.5s;
+  	will-change: transform;
+
+
 	border: solid;
 	border-width: .1px;
 	border-color: transparent;
@@ -298,7 +316,7 @@ code {
 .highlight{
 	text-align: center;
 	vertical-align:top;
-	background-position: center;
+	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
@@ -313,6 +331,9 @@ code {
 	border-color: transparent;
 	display: inline-block; 
 	padding: 0;
+
+	transition: box-shadow 0.5s;
+  	will-change: transform;
 
 	box-shadow: 5px 5px transparent,
 	    4px 4px transparent, 
