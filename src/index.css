@@ -443,12 +443,12 @@ code {
 	position: absolute;
 	position: fixed !important;
 	margin-top: 45px !important;  
-	margin-left: -75px !important;
+	margin-left: -87px !important;
 }
 
 .ui.pointing.label.clicked{
 	position: absolute;
-	margin-left: -59px !important;
+	margin-left: -69px !important;
 	color: purple !important;
 }
 
