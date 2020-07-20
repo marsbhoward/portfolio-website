@@ -2,10 +2,10 @@ import React from 'react'
 import { useSpring, animated } from 'react-spring'
 
 const calc = (x, y) => [-(y - window.innerHeight / 2) / 20, (x - window.innerWidth / 2) / 20, 1]
-const trans = (x, y, s) => `perspective(800px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
+const trans = (x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
 
 const Card = ({name,classN,mouseEnter,mouseExit,description,handleClick, underline}) => {
-  const [props, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 5, tension: 500, friction: 40 } }))
+  const [props, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 5, tension: 350, friction: 40 } }))
 
 
   if (classN === "onlight"){
@@ -28,9 +28,9 @@ const Card = ({name,classN,mouseEnter,mouseExit,description,handleClick, underli
     	    <animated.div
     	      className= {classN}
     	      onMouseEnter={mouseEnter}
-    	      onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
+    	      onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(0, 0) })}
     	      onMouseLeave={(() => set({ xys: [0, 0, 1] }),mouseExit)}
-    	      style={{ transform: props.xys.interpolate(trans) }}
+    	      
     	    />
     	  )}
 }
