@@ -200,7 +200,7 @@ class Navbar extends Component {
 				<div className={this.state.menuClass} onClick={() => this.handleOnClick('instagram')}>instagram</div>
 				<div className={this.state.menuClass} onClick={() => this.handleOnClick('linkedin')}>linkedin</div>
 				<div className={this.state.menuClass} onClick={() => this.handleOnClick('twitter')}>twitter</div>
-				<div className={this.state.menuClass} onClick={() => this.handleOnClick('resume')}>resume</div>
+				<div className={this.state.menuClass} onClick={() => this.handleOnClick('form')}>resume</div>
 			</div>
 		</div>	
   }
