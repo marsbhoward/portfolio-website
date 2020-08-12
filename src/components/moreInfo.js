@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
 
 class MoreInfo extends Component {
-
+	handleClick = () => {
+  	this.setState({
+  		clicked: 'yes'
+  	})
+  }
+	
 	render() {
 		let live = ""
 		let feats = JSON.parse(localStorage.getItem("features"));

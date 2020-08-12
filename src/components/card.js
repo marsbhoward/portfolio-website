@@ -13,7 +13,7 @@ const Card = ({name,classN,mouseEnter,mouseExit,description,handleClick, underli
     	  <animated.div
         	className= {classN}
         	onMouseEnter={mouseEnter}
-        	onClick= {handleClick}
+        	onClick= {(() => mouseEnter, handleClick)}
         	onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
         	onMouseLeave={(() => set({ xys: [0, 0, 1] }),mouseExit)}
         	style={{ transform: props.xys.interpolate(trans) }}
@@ -27,6 +27,7 @@ const Card = ({name,classN,mouseEnter,mouseExit,description,handleClick, underli
     	  return (
     	    <animated.div
     	      className= {classN}
+              onClick= {(() => mouseEnter, handleClick)}
     	      onMouseEnter={mouseEnter}
     	      onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(0, 0) })}
     	      onMouseLeave={(() => set({ xys: [0, 0, 1] }),mouseExit)}
