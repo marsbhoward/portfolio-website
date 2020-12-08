@@ -15,10 +15,11 @@ class Projects extends Component {
 
   setInfo = () => {
   	// set localStorage to this.props.project.video
-  	localStorage.setItem( 'demo', this.props.project.video )
-  	localStorage.setItem( 'github', this.props.project.github )
-  	localStorage.setItem( 'live', this.props.project.live )
-    localStorage.setItem("features", JSON.stringify(this.props.project.features));
+    sessionStorage.setItem( 'currentProject', this.props.project.name)
+  	sessionStorage.setItem( 'demo', this.props.project.video )
+  	sessionStorage.setItem( 'github', this.props.project.github )
+  	sessionStorage.setItem( 'live', this.props.project.live )
+    sessionStorage.setItem("features", JSON.stringify(this.props.project.features));
   }
 
 	mouseEnter = () => {

@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 
 class MoreInfo extends Component {
+
+  componentDidMount() {
+	console.log(this)
+  } 
+
 	handleClick = () => {
   	this.setState({
   		clicked: 'yes'
@@ -9,9 +14,9 @@ class MoreInfo extends Component {
 	
 	render() {
 		let live = ""
-		let feats = JSON.parse(localStorage.getItem("features"));
-		if (localStorage.live !== ""){
-			live = <p className = "inGrid remove"><a href={localStorage.live}>site</a></p>
+		let feats = JSON.parse(sessionStorage.getItem("features"));
+		if (sessionStorage.live !== ""){
+			live = <p className = "inGrid remove"><a href={sessionStorage.live}>site</a></p>
 		}
 		return(
 			<div className= "moreInfo">
@@ -19,8 +24,8 @@ class MoreInfo extends Component {
 				<div className= "grid2">
 				<div className = "grid">
 					<p className = "inGrid underline">Links</p>
-					<p className = "inGrid remove"><a href={localStorage.github}>github</a></p>
-					<p className = "inGrid remove"><a href={localStorage.demo}>video</a></p>
+					<p className = "inGrid remove"><a href={sessionStorage.github}>github</a></p>
+					<p className = "inGrid remove"><a href={sessionStorage.demo}>video</a></p>
 					{live}
 				</div>
 				<div className = "grid">

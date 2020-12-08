@@ -29,12 +29,15 @@ code {
 
 #root{
 	height: 100%;
+	overflow-y: scroll;
+}
+
+.backdrop{
 	margin-top: -5%;
 }
 
-
 .background{
-	margin-top: 10%;
+	margin-top: 5%;
 	position: fixed;
 	height: 100%; 
 	width: 100%;
@@ -52,7 +55,7 @@ code {
 
 
 .background-2{
-	margin-top: 10%;
+	margin-top: 5%;
 	position: fixed;
 	height: 100%; 
 	width: 100%;
@@ -143,6 +146,19 @@ code {
 	z-index: -1;
 }
 
+.riverPage{
+	height: 100%;
+	z-index: -1;	
+}
+
+.riverTitle{
+	margin-top: 1em;
+	height: 50%;
+	width: auto;
+	font-size: 5em;
+	color: #ff2d55; 
+}
+
 .header{
 	margin-top: 5%;
 	margin-bottom: 0;
@@ -160,7 +176,6 @@ code {
 .featured{
 	height: 30%;
 	width: 100%;
-	flex: 100%;
 	justify-content: center;
 	min-width: 982px;
 }
@@ -364,6 +379,7 @@ code {
 	position: relative;
 	z-index: 0;
 	margin-top: 2%;
+	margin-bottom: 3.5%;
 	background: white;
 	height: 165px;
 	width: 566px;
@@ -377,6 +393,10 @@ code {
 	    2px 2px transparent, 
 	    1px 1px transparent,
 	    5px 5px 5px gray;	
+}
+
+.moreInfoBanner{
+	background: darkgray;
 }
 
 .links{

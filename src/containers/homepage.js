@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Featured from '../components/featured';
 import MoreInfo from '../components/moreInfo';
+import MoreInfoBanner from '../components/moreInfoBanner';
 import {Spring} from 'react-spring/renderprops'
 class Homepage extends Component {
 
