@@ -146,19 +146,6 @@ code {
 	z-index: -1;
 }
 
-.riverPage{
-	height: 100%;
-	z-index: -1;	
-}
-
-.riverTitle{
-	margin-top: 1em;
-	height: 50%;
-	width: auto;
-	font-size: 5em;
-	color: #ff2d55; 
-}
-
 .header{
 	margin-top: 5%;
 	margin-bottom: 0;
@@ -501,6 +488,39 @@ ui.image {
 
   z-index:1 
 }
+
+
+/******************** River Page **************************/
+
+.flex-container{
+	display: flex;
+	width: 100%;
+}
+
+.flex-container > div {
+	height: min-content;
+	width: 50%;
+	border-style: solid;
+}
+
+.riverPage{
+	height: 100%;
+	z-index: -1;	
+}
+
+.riverTitle{
+	height: 50%;
+	width: auto;
+	font-size: 5em;
+	color: #ff2d55; 
+}
+
+.riverTitle hr{
+	width: 40%;
+
+}
+
+
 
 /***************** mobile screen homepage *****************/
 @media screen and (max-width: 957px){
