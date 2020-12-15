@@ -495,12 +495,19 @@ ui.image {
 .flex-container{
 	display: flex;
 	width: 100%;
+	height: 40%;
+	margin-bottom: 5%;
 }
 
 .flex-container > div {
-	height: min-content;
-	width: 50%;
-	border-style: solid;
+	margin: auto;
+	max-height: 100%;
+	width: 45%;
+}
+
+.description{
+	height: 100%;
+	font-size: 1.5vw;
 }
 
 .riverPage{
@@ -515,11 +522,35 @@ ui.image {
 	color: #ff2d55; 
 }
 
+.example{
+
+	font-size: 4vw;
+}
+
 .riverTitle hr{
 	width: 40%;
 
 }
 
+.riverExample{
+	margin-top: 5%;
+	height: 9.17em;
+}
+
+.main{
+	background:#fafafa;
+	border:solid;
+	border-width: 2px;
+	border-color: #eeeeee;
+	margin: auto;
+	width: 100%;
+	height: 30em;
+	color: black
+}
+
+.mainDisplay{
+	margin-top: 5%;
+}
 
 
 /***************** mobile screen homepage *****************/

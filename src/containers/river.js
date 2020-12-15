@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Headliner from '../components/river/headliner';
+import Main from '../components/river/main';
 
 class River extends Component {
 
@@ -9,6 +10,7 @@ class River extends Component {
 		return(
 			<div className="riverPage">
 				<Headliner />
+				<Main />
 			</div>
 		)
 	}
