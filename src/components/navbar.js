@@ -21,6 +21,7 @@ import closeC from '../images/close-alt.png';
 
 import { Image, Reveal, Label } from 'semantic-ui-react'
 
+let className;
 let email;
 let github;
 let instagram;
@@ -49,6 +50,7 @@ class Navbar extends Component {
 
   componentDidMount() {
 	window.addEventListener('resize', this.updateDimensions);
+
   } 
 
   componentWillUnmount() {
@@ -111,8 +113,20 @@ class Navbar extends Component {
 				twitter = twitterC
 				form = formC
 				menu = menuC
-				closeMenu = closeC				 		
+				closeMenu = closeC
+				className = "navbar"				 		
 				break;
+			case "/project":
+				email = emailC
+				github = githubC
+				instagram = instagramC
+				linkedin = linkedinC
+				twitter = twitterC
+				form = formC
+				menu = menuC
+				closeMenu = closeC	
+				className = "navbar projectNav"			 		
+				break;				
 			default:
 				email = emailB
 				github = githubB
@@ -121,12 +135,13 @@ class Navbar extends Component {
 				twitter = twitterB
 				form = formB
 				menu = menuB
-				closeMenu = closeB								
+				closeMenu = closeB	
+				className = "navbar"							
 				break;
 		}
 
 
-  		navbar=	 <div className ="navbar">
+  		navbar=	 <div className ={className}>
 				 	<Reveal animated='small fade' className="inNavbar">
 			    		<Reveal.Content visible>
 				      		<Image onMouseEnter={this.hoverEnter} onMouseLeave={this.hoverExit} onClick={(() => this.handleOnClick('email'), this.hoverClick)} circular size='mini' src= {black} className="fade" />			      		
@@ -185,14 +200,21 @@ class Navbar extends Component {
 			case "/about":
 				menu = menuC
 				closeMenu = closeC
+				className = "navbar"
 				break;
+			case "/project":
+				menu = menuC
+				closeMenu = closeC
+				className = "navbar projectNav"
+				break;				
 			default:
 				menu = menuB
-				closeMenu = closeB	
+				closeMenu = closeB
+				className = "navbar"	
 				break;
 			}  	
 
-		navbar = <div className ="navbar">
+		navbar = <div className ={className}>
 			<Image onClick={() => this.menuClick()} circular size='mini' src= {this.state.menuIcon} />
 			<div className= "menu">
 				<div className={this.state.menuClass} onClick={() => this.handleOnClick('email')}>{this.state.emailText}</div>

@@ -28,8 +28,8 @@ code {
 }
 
 #root{
-	height: 100%;
-	overflow-y: scroll;
+	height: 100vw;
+	
 }
 
 .backdrop{
@@ -52,24 +52,6 @@ code {
 
 }
 
-
-
-.background-2{
-	margin-top: 5%;
-	position: fixed;
-	height: 100%; 
-	width: 100%;
-	opacity: .40;
-	display: flex;
-	
-	align-items: flex-start;
-	justify-content: flex-start;
-	
-	background: white;
-	z-index: -3;
-
-}
-
 .background2{
 	margin-top: 5%;
 	position: fixed;
@@ -85,6 +67,24 @@ code {
 	font-size: 600%;
 	font-weight: bold;
 	z-index: 3;
+
+}
+
+
+
+.background-2{
+	margin-top: 5%;
+	position: fixed;
+	height: 100%; 
+	width: 100%;
+	opacity: .40;
+	display: flex;
+	
+	align-items: flex-start;
+	justify-content: flex-start;
+	
+	background: white;
+	z-index: -3;
 
 }
 
@@ -106,10 +106,44 @@ code {
 
 }
 
+.background-3{
+	position: static;
+	height: 100%; 
+	width: 100%;
+	opacity: .40;
+	display: flex;
+	
+	align-items: flex-start;
+	justify-content: flex-start;
+	
+	background: white;
+	z-index: -3;
+
+}
+
+.background3-2{
+	margin-top: 5%;
+	position: static;
+	height: 18.38%; 
+	width: 100%;
+	background: black;	
+
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;	
+
+	color: white;
+	font-size: 600%;
+	font-weight: bold;
+	z-index: 3;
+
+}
+
 .name{
 	position: relative;
 	margin-top: 3.5%;
-	z-index: -1;
+	z-index: 3;
+	margin-bottom: 0;
 
 }
 
@@ -492,10 +526,16 @@ ui.image {
 
 /******************** River Page **************************/
 
+.projectNav{
+	position: static !important;
+    margin-top: -4vw !important;	
+}
+
 .flex-container{
+	margin-top: -5%;
 	display: flex;
 	width: 100%;
-	height: 40%;
+	height: 38%;
 	margin-bottom: 5%;
 }
 
@@ -511,6 +551,7 @@ ui.image {
 }
 
 .riverPage{
+	margin-top: 1em;
 	height: 100%;
 	z-index: -1;	
 }
@@ -529,6 +570,7 @@ ui.image {
 
 .riverTitle hr{
 	width: 40%;
+	margin-top: auto;
 
 }
 
@@ -605,16 +647,22 @@ ui.image {
 	justify-content: flex-end;	
 
 	z-index: 4;
-	width: auto;
-	background: white;
+	width: 8.5vw;
+	background: transparent;
+  }
+
+  .navbar img{
+  	background: white !important;
+  	z-index: 5;
   }
 
   .menu{
-  	margin-left: 3.65%;
-  	 margin-top: 38%;
+  	top: 0;
+  	 margin-top: 10em;
   	 width: 100%;
   	 position: fixed;
   	 display: inline-block;
+  	 z-index: 5;
   }
 
   .inMenu{
@@ -632,17 +680,32 @@ ui.image {
 	width: 80%;
   }
 
+  .riverPage{
+	margin-top: 1em;
+	height: 100%;
+	z-index: -1;	
+}
+
+.projectNav{
+	position: static !important;
+    margin-top: -8vw !important;	
+}
+
+.flex-container{
+	margin-top: 3%;
+}
+
   .continue{
 	margin-top: -5%;
 	margin-left: 46%;
   }
 }
 
+
+
+
+
 @media screen and (max-width: 700px){
-  .menu{
-  	margin-left: 1%;
-  	margin-top: 117%;
-  }
   .inMenu{
   	padding: 6%;
   }  

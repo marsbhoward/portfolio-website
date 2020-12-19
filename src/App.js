@@ -74,7 +74,8 @@ class App extends Component {
         <Route exact path="/featured" render={() =><div className="home"> <Navbar currentPage={this.state.currentPage}/> <Homepage pageSwitch={this.pageSwitch}/> </div> }/>
         <Route path="/about" render={() => <div className="homeBase"><Background currentPage={this.state.currentPage}/> <Footer/></div>} />
         <Route exact path="/about" render={() =><div className="home"> <Navbar currentPage={this.state.currentPage}/> <About pageSwitch={this.pageSwitch}/> </div> } />
-        <Route exact path="/river" render={() => <River/> } />
+        <Route path="/river" render={() => <div className="homeBase"><Background currentPage={this.state.currentPage}/> <Navbar currentPage={this.state.currentPage}/> </div>} />                    
+        <Route exact path="/river" render={() =>  <River pageSwitch={this.pageSwitch}/>  } />
       </Router>
     );
   }

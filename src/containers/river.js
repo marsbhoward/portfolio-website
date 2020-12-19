@@ -4,7 +4,10 @@ import Main from '../components/river/main';
 
 class River extends Component {
 
-
+  componentDidMount() {
+    this.props.pageSwitch("/project")
+    console.log(this)
+  }
 
 	render() {
 		return(

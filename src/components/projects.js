@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Card from './card';
+import { withRouter } from 'react-router-dom'
 
 class Projects extends Component {
   constructor(props){
@@ -10,16 +11,19 @@ class Projects extends Component {
   handleClick = () => {
   	this.props.toggleDisplay();
   	this.setInfo();
+
   }
 
 
   setInfo = () => {
+    const {history} = this.props
   	// set localStorage to this.props.project.video
     sessionStorage.setItem( 'currentProject', this.props.project.name)
   	sessionStorage.setItem( 'demo', this.props.project.video )
   	sessionStorage.setItem( 'github', this.props.project.github )
   	sessionStorage.setItem( 'live', this.props.project.live )
     sessionStorage.setItem("features", JSON.stringify(this.props.project.features));
+    if (history)history.push('/' +this.props.project.name)
   }
 
 	mouseEnter = () => {
@@ -46,6 +50,7 @@ class Projects extends Component {
 //</div>
 
   render() {
+    const {history} = this.props;
   	let description
   	let className
   	if (this.state.highlight === "highlight"){
@@ -57,9 +62,13 @@ class Projects extends Component {
   		className = "underline"
   	}
 	return(
+    (history)
+    ?
 	  <Card name={this.props.project.name} classN={this.state.highlight} underline= {className} mouseEnter={this.mouseEnter} mouseExit={this.mouseExit} description={this.props.project.description} handleClick={this.handleClick}/>
-	)
+    :
+    <div>error</div>
+	);
   }
 }
 
-export default Projects
+export default withRouter(Projects);

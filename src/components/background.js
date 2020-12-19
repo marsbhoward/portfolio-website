@@ -12,6 +12,10 @@ class Background extends Component {
  				currentBackground = "background-2"
  				currentHeader = "background2-2"
 				break;
+			case "/project":
+ 				currentBackground = "background-3"
+ 				currentHeader = "background3-2"
+				break;								
 			default:
 				currentBackground = "background"
 				currentHeader = "background2"				
