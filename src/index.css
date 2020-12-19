@@ -533,8 +533,8 @@ ui.image {
 }
 
 .riverExample{
-	margin-top: 5%;
 	height: 9.17em;
+	height: 100%;
 }
 
 .main{
@@ -551,7 +551,6 @@ ui.image {
 .mainDisplay{
 	margin-top: 5%;
 }
-
 
 /***************** mobile screen homepage *****************/
 @media screen and (max-width: 957px){

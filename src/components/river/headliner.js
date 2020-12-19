@@ -62,7 +62,9 @@ function Headliner(){
 				</div>
 				<div className= "example">
 					<div className= "riverExample">
-						<h1 className> "example" </h1>
+						<h3> Github: </h3>
+						<h3> Live: </h3>
+						<h3> Demo: </h3>
 					</div>
 				</div>
 			</div>
