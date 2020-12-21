@@ -474,9 +474,6 @@ code {
 	font-size: 120%;
 }
 
-.description{
-	position: relative;
-}
 
 .hover{
 	margin-right: 5%;
@@ -594,6 +591,18 @@ ui.image {
 	margin-top: 5%;
 }
 
+.test{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 100%;
+  background-color: #683bb7;
+  color: #fff;
+  margin: 15px;
+  font-size: 4em;	
+}
+
 /***************** mobile screen homepage *****************/
 @media screen and (max-width: 957px){
 
@@ -693,6 +702,11 @@ ui.image {
 
 .flex-container{
 	margin-top: 3%;
+}
+
+.description{
+	font-size: 1.9vw;
+	
 }
 
   .continue{
