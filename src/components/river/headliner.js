@@ -61,7 +61,7 @@ function Headliner(){
 						<hr></hr>
 					</h1>
 					<div className= "description">
-						Whenever I'm with family or friends and we decide to watch a movie we never have one in mind. We jump in and out of apps trying to weigh our options and view the trailers, eventually the routine becomes more time consuming than the movie we actually want to enjoy. So I designed this application to consolidate the most popular movies across multiple streaming platforms and streamline the process. From the selected movie’s page you can view trailers, ratings, and more.
+						This website was created for my final project at Flatiron School. This was special for me because I created  a web scrapping command line interface (CLI) that presented Netflix movies for my first project and with this web app I was able to bring the vision I had to life. 
 					</div>
 				</div>
 				<div className= "example">

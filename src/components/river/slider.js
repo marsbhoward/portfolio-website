@@ -71,8 +71,9 @@ const Slider = props => {
 
 const SliderCSS = css`
   position: relative;
-  height: 100vh;
-  width: 100vw;
+  object-fit:cover;
+  height: 80vh;
+  width: 80vw;
   margin: 0 auto;
   overflow: hidden;
 `

@@ -36,6 +36,7 @@ code {
 	margin-top: -5%;
 }
 
+
 .background{
 	margin-top: 5%;
 	position: fixed;
@@ -397,23 +398,12 @@ code {
 }
 
 .moreInfo{
+	font-size: 130%;
 	position: relative;
-	z-index: 0;
-	margin-top: 2%;
-	margin-bottom: 3.5%;
-	background: white;
 	height: 165px;
-	width: 566px;
-	border: solid;
-	border-width: .5px;
+	width: 60%;
 	display: inline-block;
-
-		box-shadow: 5px 5px transparent,
-	    4px 4px transparent, 
-	    3px 3px transparent, 
-	    2px 2px transparent, 
-	    1px 1px transparent,
-	    5px 5px 5px gray;	
+	text-align: left;
 }
 
 .moreInfoBanner{
@@ -583,7 +573,7 @@ ui.image {
 	border-color: #eeeeee;
 	margin: auto;
 	width: 100%;
-	height: 30em;
+	height: min-content;
 	color: black
 }
 
