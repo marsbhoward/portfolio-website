@@ -17,13 +17,14 @@ class Projects extends Component {
 
   setInfo = () => {
     const {history} = this.props
+    let slug = this.props.project.name.replace(/\s+/g, '-').toLowerCase()
   	// set localStorage to this.props.project.video
     sessionStorage.setItem( 'currentProject', this.props.project.name)
   	sessionStorage.setItem( 'demo', this.props.project.video )
   	sessionStorage.setItem( 'github', this.props.project.github )
   	sessionStorage.setItem( 'live', this.props.project.live )
     sessionStorage.setItem("features", JSON.stringify(this.props.project.features));
-    if (history)history.push('/' +this.props.project.name)
+    if (history)history.push('/' + slug)
   }
 
 	mouseEnter = () => {
