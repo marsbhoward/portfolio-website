@@ -519,7 +519,7 @@ ui.image {
 }
 
 .flex-container{
-	margin-top: -5%;
+	margin-top: -3%;
 	display: flex;
 	width: 100%;
 	height: 38%;
@@ -535,6 +535,8 @@ ui.image {
 .description{
 	height: 100%;
 	font-size: 1.5vw;
+	width: 70%;
+	margin: auto;
 }
 
 .riverPage{
