@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import Headliner from '../components/river/headliner';
-import Main from '../components/river/main';
-import MoreInfo from '../components/river/moreInfo';
+import Headliner from '../components/doubleDog/headliner';
+import Main from '../components/doubleDog/main';
+import MoreInfo from '../components/doubleDog/moreInfo';
 
-class River extends Component {
+class DoubleDog extends Component {
 
   componentDidMount() {
     this.props.pageSwitch("/project")
@@ -20,4 +20,4 @@ class River extends Component {
 		)
 	}
 }
-export default River
+export default DoubleDog

@@ -57,11 +57,11 @@ function Headliner(){
 		return(
 			<div className="flex-container">
 				<div className="headliner">
-					<h1 className="projectTitle riverTitle">River
+					<h1 className="ddTitle projectTitle">Double Dog Dare
 						<hr></hr>
 					</h1>
 					<div className= "description">
-						Hi This website was created for my final project at Flatiron School. This was special for me because I created  a web scrapping command line interface (CLI) that presented Netflix movies for my first project and with this web app I was able to bring the vision I had to life. 
+						I developed this project during my time at Flatiron School where I was challanged to make a single page web application using only vanilla Javascript on the frontend, and create a Rails API for the backend.  
 					</div>
 				</div>
 				<div className= "example">

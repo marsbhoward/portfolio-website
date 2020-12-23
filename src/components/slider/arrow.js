@@ -30,7 +30,7 @@ const Arrow = ({ direction, handleClick }) => (
       }
     `}
   >
-    {direction === 'right' ? <img src={'https://raw.githubusercontent.com/DZuz14/react-hooks-image-slider/b56e85722dee611a34ed378cd5906d27e18b9e3c/src/img/right-arrow.svg'} /> : <img src={'https://raw.githubusercontent.com/DZuz14/react-hooks-image-slider/b56e85722dee611a34ed378cd5906d27e18b9e3c/src/img/left-arrow.svg'} />}
+    {direction === 'right' ? <img src={'https://raw.githubusercontent.com/DZuz14/react-hooks-image-slider/b56e85722dee611a34ed378cd5906d27e18b9e3c/src/img/right-arrow.svg'} alt='arrow'/> : <img src={'https://raw.githubusercontent.com/DZuz14/react-hooks-image-slider/b56e85722dee611a34ed378cd5906d27e18b9e3c/src/img/left-arrow.svg'} alt='arrow' />}
   </div>
 )
 

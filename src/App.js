@@ -9,6 +9,7 @@ import Homepage from './containers/homepage';
 import About from './containers/about';
 import Landing from './containers/landing';
 import River from './containers/river'
+import DoubleDog from './containers/doubleDog'
 import Background from './components/background';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
@@ -76,6 +77,8 @@ class App extends Component {
         <Route exact path="/about" render={() =><div className="home"> <Navbar currentPage={this.state.currentPage}/> <About pageSwitch={this.pageSwitch}/> </div> } />
         <Route path="/river" render={() => <div className="homeBase"><Background currentPage={this.state.currentPage}/> <Navbar currentPage={this.state.currentPage}/> </div>} />                    
         <Route exact path="/river" render={() =>  <River pageSwitch={this.pageSwitch}/>  } />
+        <Route path="/double-dog-dare" render={() => <div className="homeBase"><Background currentPage={this.state.currentPage}/> <Navbar currentPage={this.state.currentPage}/> </div>} />                    
+        <Route exact path="/double-dog-dare" render={() =>  <DoubleDog pageSwitch={this.pageSwitch}/>  } />
       </Router>
     );
   }

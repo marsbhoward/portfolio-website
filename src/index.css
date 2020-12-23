@@ -511,7 +511,7 @@ ui.image {
 }
 
 
-/******************** River Page **************************/
+/******************** Project Page **************************/
 
 .projectNav{
 	position: static !important;
@@ -522,7 +522,7 @@ ui.image {
 	margin-top: -3%;
 	display: flex;
 	width: 100%;
-	height: 38%;
+	height: 35%;
 	margin-bottom: 5%;
 }
 
@@ -539,17 +539,24 @@ ui.image {
 	margin: auto;
 }
 
-.riverPage{
+.projectPage{
 	margin-top: 1em;
 	height: 100%;
 	z-index: -1;	
 }
 
-.riverTitle{
+.projectTitle{
 	height: 50%;
 	width: auto;
 	font-size: 5em;
-	color: #ff2d55; 
+}
+
+.riverTitle{
+	color: #ff2d55; 	
+}
+
+.ddTitle{
+	color: #01b5ad;
 }
 
 .example{
@@ -557,13 +564,14 @@ ui.image {
 	font-size: 4vw;
 }
 
-.riverTitle hr{
+.projectTitle hr{
 	width: 40%;
 	margin-top: auto;
 
 }
 
-.riverExample{
+.projectExample{
+	margin-top: 5%;
 	height: 9.17em;
 	height: 100%;
 }
