@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { useRef } from 'react'
 import {
   BrowserRouter as Router,
-  Route
+  Route,
+  Redirect  
 } from 'react-router-dom';
 
 import Homepage from './containers/homepage';
@@ -79,6 +80,7 @@ class App extends Component {
         <Route exact path="/river" render={() =>  <River pageSwitch={this.pageSwitch}/>  } />
         <Route path="/double-dog-dare" render={() => <div className="homeBase"><Background currentPage={this.state.currentPage}/> <Navbar currentPage={this.state.currentPage}/> </div>} />                    
         <Route exact path="/double-dog-dare" render={() =>  <DoubleDog pageSwitch={this.pageSwitch}/>  } />
+        <Route exact path="/portfolio-website" render={() =>  <Redirect to='/featured'/>  } />
       </Router>
     );
   }
