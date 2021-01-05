@@ -21,8 +21,10 @@ function MoreInfo(){
 			<div className= "section"> 
 				<h3>Under The Hood</h3>
 				<p>
-					As mentioned above I used Ruby on Rails to build out an application programming interface (API). Here I built out associations between game, dare, and player models. I also created join tables to preserve the history of a game’s turns and a player’s turns. I manually created and seeded each dare and balanced the point and shot values to match the extremeness of a dare. 
-When starting a game players are prompted to enter their names which calls the create method first from the games controller and then from the players controller. This adds a game record and a player record to that game. Once all players are entered and a game begins, a random number generator is used to gather a number that corresponds with a record of a dare.
+					As mentioned above the frontend consists of only vanilla JS and Ruby on Rails was used to build out an application programming interface (API). Here I built out associations between game, dare, and player models. I also created join tables to preserve the history of a game’s turns and a player’s turns. I manually created and seeded each dare and balanced the point and shot values to match the extremeness of a dare. 
+					<br/>
+					<br/>
+					When starting a game players are prompted to enter their names which calls the create method first from the games controller and then from the players controller. This adds a game record and a player record to that game. Once all players are entered and a game begins, a random number generator is used to gather a number that corresponds with a record of a dare.
 				</p>
 			</div>
 		</div>
