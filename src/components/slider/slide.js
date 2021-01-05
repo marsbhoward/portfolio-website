@@ -5,8 +5,8 @@ import { css, jsx } from '@emotion/react'
 const Slide = ({ content }) => (
   <div
     css={css`
-      height: 100%;
-      width: 100%;
+      height: 85%;
+      width: 85%;
       margin-left: -35vh;
       background-image: url('${content}');
       background-size: contain;

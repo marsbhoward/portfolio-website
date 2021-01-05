@@ -1,12 +1,27 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom'
 
 let currentBackground = "background";
 let currentHeader = "background2";
 class Background extends Component {
-//switch case for about or featured to change colors
+
+  constructor(props){
+    super(props)
+  }
+
+  handleClick = () => {
+    const {history} = this.props
+    if (history){
+    	history.push('/featured')
+    }
+    else{
+    	console.log('yes')
+    }
+  }
 
 	render() {
 		let page = this.props.currentPage
+	//switch case for about or featured to change colors		
 		switch (page) {
 			case "/about":
  				currentBackground = "background-2"
@@ -27,13 +42,13 @@ class Background extends Component {
 			  </div>
 			  <div className= {currentHeader}>
 			  <p></p>
-			    <p className="name">Mars</p>
-			    <p className="name">B</p>
-			    <p className="name">Howard</p>				  
+			    <p className="name" onClick={this.handleClick}>Mars</p>
+			    <p className="name" onClick={this.handleClick}>B</p>
+			    <p className="name" onClick={this.handleClick}>Howard</p>				  
 			  </div>
 			</div>
 		)
 	}
 }
 
-export default Background
+export default withRouter(Background);

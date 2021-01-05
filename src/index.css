@@ -347,8 +347,8 @@ code {
 	background-image: url('images/doubleDog.png');	
 }
 
-.matchmaking{
-	background-image: url('images/matchmaking.png');		
+.website{
+	background-image: url('images/marsPlanet.jpg');		
 }
 
 
@@ -400,12 +400,18 @@ code {
 .moreInfo{
 	font-size: 130%;
 	position: relative;
-	width: 60%;
+	width: 100%;
 	display: inline-block;
 	text-align: left;
     margin-bottom: 10%;
     margin-top: 5%;
     height: min-content;	
+}
+
+.section{
+	width: 70%;
+	margin: auto;
+	margin-bottom: 5%;
 }
 
 .moreInfoBanner{
@@ -595,7 +601,7 @@ ui.image {
 
 .sketches{
     margin-top: 3%;
-    
+    margin: auto;
     display: flex;
     width: 100vh;
     height: 35%;
@@ -606,10 +612,9 @@ ui.image {
 }
 
 .sketches > img{
-	margin: auto;
-	width: 50%;
-	margin-left: 1%;
-	margin-right: 1%;
+	width: 30vw;
+	height: 30vw;
+	margin: 1%;	
 }
 
 
@@ -728,7 +733,14 @@ ui.image {
 
 .sketches >img {
 	margin: auto;
+	margin-top: 1%;
+	margin-bottom: 1%;
 	width: 100%;
+	height: auto;
+}
+
+.projectTitle{
+	font-size: 3em;
 }
 
 
