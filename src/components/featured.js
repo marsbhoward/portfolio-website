@@ -8,6 +8,7 @@ class Featured extends Component {
 			<div className= "featured">
 				<div className= "border">
 				  <h1>-Featured Projects-</h1>
+				  <hr></hr>
 				</div>
 				<ProjectsList toggleDisplay= {this.props.toggleDisplay}/>		 
 			</div>
