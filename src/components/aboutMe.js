@@ -5,7 +5,7 @@ class About extends Component {
 
 	render() {
 		let intro = "I am a software engineer based out of Brooklyn, NY"
-		let bio = "I first began programming 2008 and it has grown into a major passion. I enjoy the journey of taking concepts and bringing them to life."+ "\n" + " I specialize in Ruby and Javascript but have experience working with C++, Java, C#, Visual Basic, Objective C, and pseudocode :)"
+		let bio = "I first began programming with QBasic in 2008 and it has grown into a major passion. I enjoy the journey of taking concepts and bringing them to life."+ "\n" + " I specialize in Ruby and Javascript but have experience working with C++, Java, C#, Visual Basic, Objective C, and pseudocode :)"
 		let misc = "Proud member of House Gryffindor"
 		return(
 			<div className= "about">
@@ -23,7 +23,7 @@ class About extends Component {
 							<p>{`\n`}</p>
 							<hr></hr>
 							<p>{`\n`}</p>
-							First programming language: QBasic
+							Semi-casual World of Warcraft player
 							<p>{`\n`}</p>
 							<hr></hr>
 							<p>{`\n`}</p>

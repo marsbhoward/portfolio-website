@@ -10,7 +10,7 @@ html,body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  overflow: auto;
+  overflow: hidden;
 
   -webkit-touch-callout: none;
   cursor: default;
@@ -520,6 +520,13 @@ ui.image {
 
 /******************** Project Page **************************/
 
+.projectPage{
+	overflow: auto;
+	margin-top: 1em;
+	height: 100%;
+	z-index: -1;	
+}
+
 .projectNav{
 	position: static !important;
     margin-top: -4vw !important;	
@@ -546,11 +553,6 @@ ui.image {
 	margin: auto;
 }
 
-.projectPage{
-	margin-top: 1em;
-	height: 100%;
-	z-index: -1;	
-}
 
 .projectTitle{
 	height: 50%;
@@ -620,6 +622,19 @@ ui.image {
 
 /***************** mobile screen homepage *****************/
 @media screen and (max-width: 957px){
+
+  #root{
+  	overflow: auto;
+  }
+
+  .head{
+  	margin-top: 5%;
+  	width: 250%;
+  }
+
+  .myPic{
+  	margin-top: 30%;
+  }
 
   .border{
   	width: 40%;
