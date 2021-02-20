@@ -30,6 +30,7 @@ code {
 .backdrop{
 	margin-top: -5%;
 	position: relative;
+	z-index: 1;
 }
 
 
