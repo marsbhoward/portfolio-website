@@ -4,12 +4,45 @@ import { css, jsx } from '@emotion/react'
 import SliderContent from './sliderContent'
 import Slide from './slide'
 import Arrow from './arrow'
+import Window from '../window'
+
 
 /**
  * @function Slider
  */
 const Slider = props => {
-  const getWidth = () => window.innerWidth
+const [cssWidth, setCssWidth] = useState('80vw')
+const [windowWidth, setWindowWidth] = useState(getWindowDimensions());
+const getWidth = () => window.innerWidth
+
+  function getWindowDimensions() {
+    const { innerWidth: width, innerHeight: height } = window;
+    return {
+      width
+    };
+  }
+
+
+  useEffect(() => {
+    console.log(windowWidth);  
+    function handleResize() {
+      setWindowWidth(getWindowDimensions()); 
+      console.log(getWindowDimensions());
+
+    if (getWindowDimensions().width > 957){
+      setCssWidth ('80vw');
+      console.log('large')
+    }
+    else{
+      setCssWidth ('76vw');
+      console.log('small')
+    }    
+
+    }
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const [state, setState] = useState({
     activeIndex: 0,
@@ -50,9 +83,9 @@ const Slider = props => {
       translate: (activeIndex - 1) * getWidth()
     })
   }
-  
+
   return (
-    <div css={SliderCSS}>
+    <div css={SliderCSS(cssWidth)}>
       <SliderContent
         translate={translate}
         transition={transition}
@@ -69,12 +102,17 @@ const Slider = props => {
   )
 }
 
-const SliderCSS = css`
+
+
+function SliderCSS(width) {
+  console.log(width)
+  return( css`
   position: relative;
   object-fit:cover;
   height: 80vh;
-  width: 80vw;
+  width: ${width};
   margin: 0 auto;
   overflow: hidden;
-`
+`)
+}
 export default Slider
